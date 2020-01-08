@@ -8,4 +8,4 @@ function count(a, b) {      //some code whose runtime we want to measure
     return result = a + b  
 }
 
-console.log(timer(count(2, 3)))
+alert.log(timer(count(2, 3)))

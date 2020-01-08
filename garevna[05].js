@@ -1,7 +1,11 @@
-let name = ['name1', 'name2', 'name3']
-let surname = ['surname1', 'surname2', 'surname3']
-let newArr = []
+const names = ['name1', 'name2', 'name3']
+const surnames = ['surname1', 'surname2', 'surname3']
+const arr = []
 
-for (let i = 0; (i < name.length && i < surname.length); i++) {
-    newArr.push(name[i].concat(' ',surname[i]))
-}
+names.forEach((name, nameIndex) => {
+    surnames.forEach((surname, surnameIndex) => {
+       if(nameIndex === surnameIndex) {
+            arr.push(name.concat(' ', surname))
+       }
+    })
+})
